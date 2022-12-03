@@ -6,6 +6,7 @@ body{
 }
 
 #logo img{
+    margin-left: 10%;
     width: 10%;
     height: auto;
 }
@@ -50,33 +51,94 @@ body{
 section{
     margin-top: 10%;
     margin-bottom: 20%;
+    /*width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;*/
 }
 
-.container_left{
+.cont_izq{
     width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 100%;
+}
+
+.cont_der{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: gray;
+    height: 100%;
+}
+
+.cont_row{
+    display: grid;
+    height: 100%;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.cont_row img{
+    width: 90%;
+}
+
+@media only screen and (max-width: 900px){
+    .cont_row{
+        grid-template-columns: 1fr;
+    }
+}
+
+/*.container_left{
+    width: 100%;
     /*float: center;*/
-    height: auto;
+   /* height:fit-content;
     /*Que el texto no se salga del contenedor*/
-    overflow: hidden;
+   /* overflow: hidden;
     padding: 7px;
     border-radius: 10px;
     margin-left: 10%;
     margin-right: 10%;
+    margin-bottom: 100px;
+   
 }
 
+/*
 .cont_izq img{
     float: left;
     margin-top: 20px;
-    width: 320px;
-    height: 240px;
+    width: 40%;
+    height: auto;
     /*margin: arriba / derecha / abajo / izquierda*/
-    margin: 7px 40px 8px 0px;
+   /* margin: 7px 40px 8px 0px;
     padding: 5px;
     border-radius: 40px;
-
 }
 
+.cont_izq .div_text{
+    width: 40%;
+    float: right;
+}
 
+.container_der{
+    width: 80%;
+    height: auto;
+    /*Que el texto no se salga del contenedor*/
+    /*overflow: hidden;
+    padding: 7px;
+    border-radius: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 20px;
+}
+
+.cont_der img{
+    float: right;
+    width: 40%;
+    height: auto;
+    /*margin: arriba / derecha / abajo / izquierda*/
+    /*margin: 7px 40px 8px 0px;
+    padding: 5px;
+    border-radius: 40px;
+}
 
 /* Footer */
 footer{
@@ -89,7 +151,7 @@ footer{
     color: var(--color-white);
     padding: 0;
     /*Para que el footer siempre se quede abajo*/
-    margin-top: auto;
+    margin-top: 30%;
     /**/
     
     line-height: 0.5rem;
