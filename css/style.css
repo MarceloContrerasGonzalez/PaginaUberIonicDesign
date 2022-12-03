@@ -1,0 +1,10 @@
+.titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#contenedorQR{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
