@@ -22,7 +22,8 @@ if (bolMobile == true){
 function getMobileOS() {
     var userAgent = navigator.userAgent || navigator.vendor || window.opera;
 
-    if ((/windows phone/i.test(userAgent)) || (/android/i.test(userAgent)) || (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream)){
+    if ( /*(/windows phone/i.test(userAgent)) ||*/ (/android/i.test(userAgent)) || (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream)){
+        console.log(userAgent)
         return true;
     }
     // Windows Phone must come first because its UA also contains "Android"
