@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700');
 
 body{
     background-color: rgb(255, 255, 255);
+
     margin: 0;
 }
 
@@ -17,22 +19,40 @@ body{
     text-align: center;
     color: aliceblue;
     max-width: 90%;
+    height: fit-content;
     margin-left: 5%;
     margin-right: 5%;
 }
 
-#cabecera h1{
-    font-size: 60px;
-    font-family:A Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+#tittle_div{
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+}
+#tittle_div h1{
+    font-size: 60px;
+    font-family: 'Montserrat', sans-serif;
+    /* font-family:A Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+}
+
+#tittle_div img{
+    height: 80px;
+    width: 80px;
+    margin-right: 1%;
 }
 
 #topCurve{
     /* background: #0059ff; */
     background-image: url("../img/headerBackground.jpg");
     /* height: 1000px; */
+
+    /*Efecto parallax*/
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
 }
 
 #topCurve svg{
@@ -61,6 +81,7 @@ body{
 
 #cont_boton a{
     background-color: white;
+    /*background-image:  linear-gradient(190deg, #ffffff, #d6d6d6, rgb(139, 139, 139));*/
     text-decoration: none;
     color: black;
     font-size: 20px;
@@ -97,16 +118,16 @@ section{
 .cont_izq{
     width: 100%;
     height: 100%;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .cont_der{
     width: 100%;
-    background-color: #f7f7f7;
+    background-color: #cacaca;
     height:100%;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .cont_der img{
@@ -115,10 +136,11 @@ section{
 
 .cont_row{
     width: 80%;
+    height: 90%;
     margin-left: 10%;
     margin-right: 10%;
     display: grid;
-    height: 90%;
+    
     grid-template-columns: repeat(2, 1fr);
 }
 
@@ -143,15 +165,26 @@ section{
     font-size: 30px;
 }
 
+/*Boton de descarga inferior*/
+
 #after_section a{
-    background-color: #2a60d4;
+    background-color:  #000000;
+    /*background-color:  #2a59b6;*/
+    /*background-image:  linear-gradient(190deg, #3973f0, #000069);*/
     text-decoration: none;
     color: #ffffff;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
     padding: 15px 10px;
     border-radius: 10px;
+    border: 1px solid #fff;
 }
+
+#after_section a:hover{
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+}
+
 
 #after_section img {
     height: 30px;
@@ -166,6 +199,17 @@ footer{
     text-align: center;
     width: 100%;
     background-image: url("../img/footerBackground.png");
+    /*Efecto parallax*/
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*Efecto parallax*/
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
     /*que flote hacia la izquierda*/
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 15px;
@@ -201,9 +245,12 @@ footer{
     display: inline-block;
 }
 .Cont_Redes{
+    width: 50%;
     float: left;
+    text-align: left
 }
 .Cont_Google{
+    width: 50%;
     float: right;
     text-align: right;
 }
@@ -222,11 +269,48 @@ footer{
     .cont_der img{
         order: 0;
     }
+
+    #tittle_div h1{
+        font-size: 55px;
+    }
+
+    #tittle_div img{
+        height: 50px;
+        width: 50px;
+    }
 }
 
 @media only screen and (max-width: 430px){
     #cabecera h1{
         font-size: 50px;
+    }
+
+    .Cont_Redes{
+        width: 100%;
+        text-align: center
+    }
+    .Cont_Google{
+        width: 100%;
+        text-align: center;
+    }
+    #foo_logo{
+        width: 100%;
+    }
+    #foo_logo img{
+        width: 80%;
+        margin-top: 10%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    #tittle_div h1{
+        font-size: 40px;
+    }
+
+    #tittle_div img{
+        height: 30px;
+        width: 30px;
+        border-radius: 25px;
     }
 }
 
@@ -237,6 +321,12 @@ footer{
 
     #cabecera h2{
         font-size: 15px;
+    }
+
+    #tittle_div img{
+        height: 20px;
+        width: 20px;
+        border-radius: 25px;
     }
 
     #contenedorQR img{
