@@ -103,10 +103,15 @@ nav{
     margin-right: 10%;
 }
 /* Contenedores de descarga */
-#cont_descarga{
+.cont_descarga{
     text-align: center;
     margin-top: 5%;
     color: white;
+}
+.cont_descarga2{
+    text-align: center;
+    margin-top: 1%;
+    color: rgb(0, 0, 0);
 }
 #contenedorQR{
     display: flex;
@@ -138,10 +143,41 @@ nav{
    display: inline-block;
 }
 
+/*Descarga del footer*/
+#contenedorQR2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#contenedorQR2 img{
+    width: 300px;
+    height: 300px;
+}
+
+#cont_boton2 a{
+    background-color: white;
+    /*background-image:  linear-gradient(190deg, #ffffff, #d6d6d6, rgb(139, 139, 139));*/
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px 40px;
+    border-radius: 25px;
+}
+
+#cont_boton2 img {
+    height: 30px;
+    width: auto;
+    margin: auto;
+   vertical-align: middle; 
+   display: inline-block;
+}
+
 /* Seccion de descripcion de la app */
 section{
     margin-top: 5%;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
 }
 
 .div_text h1{
@@ -213,11 +249,11 @@ section{
 
 /*Boton de descarga inferior*/
 
-#after_section a{
+/* #cont_boton2 a{
     background-color:  #000000;
     /*background-color:  #2a59b6;*/
     /*background-image:  linear-gradient(190deg, #3973f0, #000069);*/
-    text-decoration: none;
+    /* text-decoration: none;
     color: #ffffff;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
@@ -226,19 +262,19 @@ section{
     border: 1px solid #fff;
 }
 
-#after_section a:hover{
+#cont_boton2 a:hover{
     -webkit-filter: invert(100%);
     filter: invert(100%);
 }
 
 
-#after_section img {
+#cont_boton2 img {
     height: 30px;
     width: auto;
     margin: auto;
    vertical-align: middle; 
-   display: inline-block;
-}
+   display: inline-block; 
+} */
 
 /* Footer */
 footer{
@@ -262,7 +298,7 @@ footer{
     color: var(--color-white);
     padding: 0;
     /*Para que el footer siempre se quede abajo*/
-    margin-top: 10%;
+    margin-top: 5%;
     /**/
     
     line-height: 0.5rem;
