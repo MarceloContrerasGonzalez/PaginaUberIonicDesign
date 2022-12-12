@@ -329,20 +329,20 @@ footer{
 }
 
 .Cont_legal{
-    order: 1;
+    order: 2;
     text-align: left;
 }
 .Cont_Redes{
    /* width: 50%;
     float: left;*/
-    order: 2;
+    order: 1;
     text-align: center;
 }
 .Cont_Google{
     /*width: 50%;
     float: right;*/
     order: 3;
-    text-align: right;
+    text-align: center;
 }
 .Cont_Google img{
     width: 10%;
