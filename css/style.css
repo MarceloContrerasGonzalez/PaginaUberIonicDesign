@@ -165,10 +165,10 @@ nav{
 }
 
 #cont_boton2 a{
-    background-color: white;
+    background-color: #727272;
     /*background-image:  linear-gradient(190deg, #ffffff, #d6d6d6, rgb(139, 139, 139));*/
     text-decoration: none;
-    color: black;
+    color: rgb(255, 255, 255);
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
     padding: 20px 40px;
